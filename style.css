@@ -36,6 +36,45 @@
     background: black url('Res/bg.jpg') center / cover;
 }
 
+.over{
+    top: 6rem;
+    line-height: 1;
+}
+
+#grid{
+    max-width: 767px;
+    display: grid;
+    grid-template-areas: 
+        "a a a a"
+        "b c d e";
+    gap: 1rem 2rem;
+}
+
+#a{
+    grid-area: a;
+}
+#b{
+    grid-area: b;
+}
+#c{
+    grid-area: c;
+    border-left: 1px solid gray;
+}
+#d{
+    grid-area: d;
+    border-left: 1px solid gray;
+}
+#e{
+    grid-area: e;
+}
+#e a{
+    width: 100%;
+    border: .1em solid white;
+}
+
+.foot{
+    padding: 2rem;
+}
 
 /**** Responsiveness ****/
 @media screen and (max-width: 768px) {
@@ -45,7 +84,20 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .desktop {
+    .hide {
         display: none;
+    }
+    
+}
+
+@media screen and (max-width: 512px) {
+    #grid{
+        grid-template-areas: 
+        "a a a"
+        "b c d"
+        "e e e";
+    }
+    #b, #c, #d{
+        font-size: .75rem;
     }
 }
