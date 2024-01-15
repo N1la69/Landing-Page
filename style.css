@@ -1,14 +1,51 @@
+/**** Reusable Classes ****/
+.center,
+.center-col,
+.left,
+.right,
+.top,
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.center-col {
+    flex-direction: column;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.top {
+    align-items: flex-start;
+}
+
+.bottom {
+    align-items: flex-end;
+}
 
 
 /**** Hero ****/
-.hero{
-    background: black url(bg.jpg) center / cover;
+.hero {
+    background: black url('Res/bg.jpg') center / cover;
 }
+
 
 /**** Responsiveness ****/
 @media screen and (max-width: 768px) {
-    .hero{
-        background: black url(bg2.jpg) center / cover;
+    .hero {
+        background: black url('Res/bg2.jpg') center / cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
     }
 }

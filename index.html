@@ -4,69 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+        integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
 </head>
-
-<style>
-    /**** Resulable Classes ****/
-    .center,
-    .center-col,
-    .left,
-    .right,
-    .top,
-    .bottom {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .center-col {
-        flex-direction: column;
-    }
-
-    .left {
-        justify-content: flex-start;
-    }
-
-    .right {
-        justify-content: flex-end;
-    }
-
-    .top {
-        align-items: flex-start;
-    }
-
-    .bottom {
-        align-items: flex-end;
-    }
-</style>
 
 <body class="is-marginless">
 
     <!-- Hero -->
     <section class="hero is-fullheight">
         <div class="hero-head">
-            <div class="columns is-mobile is-marginless">
+            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
                 <div class="column left">
-                    <p class="navbar-item">TOYOTA</p>
+                    <figure class="navbar-item image">
+                        <img src="Res\logo.png" alt="logo">
+                    </figure>
                 </div>
-                <div class="column center">
-                    <p class="navbar-item">MODEL MK5</p>
-                    <p class="navbar-item">MODEL GT</p>
-                    <p class="navbar-item">MODEL GR</p>
-                    <p class="navbar-item">ROADSTER</p>
-                    <p class="navbar-item">ENERGY</p>
+                <div class="column center desktop">
+                    <p class="navbar-item has-text-black">MODEL MK5</p>
+                    <p class="navbar-item has-text-black">MODEL GT</p>
+                    <p class="navbar-item has-text-black">MODEL GR</p>
+                    <p class="navbar-item has-text-danger-dark">SUPRA</p>
+                    <p class="navbar-item has-text-black">ENERGY</p>
                 </div>
                 <div class="column right">
-                    <p class="navbar-item">SHOP</p>
-                    <p class="navbar-item">SIGN IN</p>
-                    <p class="navbar-item">HAMBURGER</p>
+                    <p class="navbar-item desktop has-text-black">SHOP</p>
+                    <p class="navbar-item desktop has-text-black">SIGN IN</p>
+                    <figure class="navbar-item image has-text-black">
+                        <i class="ri-menu-fill has-text-weight-bold is-size-5"></i>
+                    </figure>
                 </div>
             </div>
         </div>
+
+        <!-- Header -->
+        <header class="hero-body">
+            <h1 class="subtitle is-4">Totoya</h1>
+            <h2 class="title is-1">Supra MK5</h2>
+        </header>
+
     </section>
+
 </body>
 
 </html>
