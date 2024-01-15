@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Landing Page</title>
 </head>
-<body>
-    
+
+<style>
+    /**** Resulable Classes ****/
+    .center,
+    .center-col,
+    .left,
+    .right,
+    .top,
+    .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-col {
+        flex-direction: column;
+    }
+
+    .left {
+        justify-content: flex-start;
+    }
+
+    .right {
+        justify-content: flex-end;
+    }
+
+    .top {
+        align-items: flex-start;
+    }
+
+    .bottom {
+        align-items: flex-end;
+    }
+</style>
+
+<body class="is-marginless">
+
+    <!-- Hero -->
+    <section class="hero is-fullheight">
+        <div class="hero-head">
+            <div class="columns is-mobile is-marginless">
+                <div class="column left">
+                    <p class="navbar-item">TOYOTA</p>
+                </div>
+                <div class="column center">
+                    <p class="navbar-item">MODEL MK5</p>
+                    <p class="navbar-item">MODEL GT</p>
+                    <p class="navbar-item">MODEL GR</p>
+                    <p class="navbar-item">ROADSTER</p>
+                    <p class="navbar-item">ENERGY</p>
+                </div>
+                <div class="column right">
+                    <p class="navbar-item">SHOP</p>
+                    <p class="navbar-item">SIGN IN</p>
+                    <p class="navbar-item">HAMBURGER</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

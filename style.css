@@ -1,0 +1,14 @@
+
+
+
+/**** Hero ****/
+.hero{
+    background: black url(bg.jpg) center / cover;
+}
+
+/**** Responsiveness ****/
+@media screen and (max-width: 768px) {
+    .hero{
+        background: black url(bg2.jpg) center / cover;
+    }
+}
