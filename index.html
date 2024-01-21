@@ -16,39 +16,33 @@
 
     <!-- Hero -->
     <section class="hero is-fullheight">
-        <div class="hero-head">
-            <div class="columns is-mobile is-marginless heading has-text-weight-bold">
-                <div class="column left">
-                    <figure class="navbar-item image">
-                        <img src="Res\logo.png" alt="logo">
-                    </figure>
-                </div>
-
-                <div class="column center hide navbar-menu">
-                    <p class="navbar-item has-text-black is-size-6">MODEL MK5</p>
-                    <p class="navbar-item has-text-black is-size-6">MODEL GT</p>
-                    <p class="navbar-item has-text-black is-size-6">MODEL GR</p>
-                    <p class="navbar-item has-text-danger-dark is-size-6">SUPRA</p>
-                    <p class="navbar-item has-text-black is-size-6">ENERGY</p>
-                </div>
-
-                <div class="column right">
-                    <p class="navbar-item hide has-text-black is-size-6">SHOP</p>
-                    <p class="navbar-item hide has-text-black is-size-6">SIGN IN</p>
-                    <!-- <figure class="navbar-item image has-text-black">
-                        <i class="fa-solid fa-bars is-size-5"></i>
-                    </figure> -->
-                </div>
-                <div class="right">
-                    <a class="navbar-burger has-text-black">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="Res\logo.png" alt="logo" style="max-height: 70px;" class="py-2 px-2">
+                </a>
+                <a class="navbar-burger has-text-black" id="burger">
+                    <span class="is-size-1"></span>
+                    <span class="is-size-1"></span>
+                    <span class="is-size-1"></span>
+                </a>
             </div>
-        </div>
+            <!-- Links -->
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-start">
+                    <a class="navbar-item has-text-black is-size-5">MODEL MK5</a>
+                    <a class="navbar-item has-text-black is-size-5">MODEL GT</a>
+                    <a class="navbar-item has-text-black is-size-5">MODEL GR</a>
+                    <a class="navbar-item has-text-danger-dark is-size-5">SUPRA</a>
+                    <a class="navbar-item has-text-black is-size-5">ENERGY</a>
+                </div>
+                <div class="navbar-end mr-3">
+                    <a class="navbar-item has-text-black is-size-5">SHOP</a>
+                    <a class="navbar-item has-text-black is-size-5">SIGN IN</a>
+                </div>
+            </div>
+        </nav>
 
         <!-- Header -->
         <header class="hero-body">
@@ -92,9 +86,9 @@
                 </div>
             </div>
         </main>
-
     </section>
 
+    <script src="app.js"></script>
 </body>
 
 </html>
